@@ -1,14 +1,14 @@
-// import useToggle from "../../hooks/useToggle";
+import useToggle from "../../hooks/useToggle";
 
 function Exercise3() {
-    // const [isOpen, toggleOpen] = useToggle();
+  const [isOpen, toggleOpen] = useToggle(false);
 
-    return (
-        <div>
-            {/* <button onClick={toggleOpen}>Toggle</button> */}
-            {/* <p>{isOpen ? "Đã bật!" : "Đã tắt!"}</p> */}
-        </div>
-    );
+  return (
+    <div>
+      <button onClick={toggleOpen}>Toggle</button>
+      <p>{isOpen ? "Đã bật!" : "Đã tắt!"}</p>
+    </div>
+  );
 }
 
 export default Exercise3;
