@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
-function useDocumentTitle(init = "Trang chủ") {
+function useDocumentTitle(init) {
   const [title, setTitle] = useState(init);
 
   useEffect(() => {
