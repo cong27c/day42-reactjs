@@ -19,7 +19,7 @@ const UserCard = ({ name, age, isVerified }) => {
 UserCard.propTypes = {
   name: PropTypes.string.isRequired,
   age: PropTypes.number,
-  isVerified: PropTypes.bool,
+  isVerified: PropTypes.bool.isRequired,
 };
 
 UserCard.defaultProps = {

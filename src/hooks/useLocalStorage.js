@@ -11,6 +11,7 @@ function useLocalStorage(key, initialValues) {
       return initialValues;
     }
   });
+
   const setValue = (value) => {
     try {
       const valueStorage = value instanceof Function ? value(storage) : value;
@@ -24,3 +25,4 @@ function useLocalStorage(key, initialValues) {
 }
 
 export default useLocalStorage;
+

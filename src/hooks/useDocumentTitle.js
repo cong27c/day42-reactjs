@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
-function useDocumentTitle(init = "") {
-  const [value, setValue] = useState(init);
+function useDocumentTitle(init = "Trang chủ") {
+  const [title, setTitle] = useState(init);
 
   useEffect(() => {
-    document.value = value;
-    setValue(value);
-  }, [value]);
-  return value;
+    document.title = title;
+  }, [title]);
+  return [title, setTitle];
 }
 
 export default useDocumentTitle;
